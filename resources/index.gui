@@ -1,0 +1,40 @@
+<svg>
+  <use id="container" href="#panoramaview">
+    <use id="item1" href="#panoramaview-item">
+      <rect width="100%" height="20" x="0" y="0" /><!--Each elment of #panoramaview-item is one of the scrolling screens-->
+      <text id="accel-label" class="sensor-label">accelerometer</text>
+      <text id="accel-data" class="sensor-data">{ ... }</text>
+      <text id="bar-label" class="sensor-label">barometer</text>
+      <text id="bar-data" class="sensor-data">{ ... }</text>
+      <text id="bps-label" class="sensor-label">body-presence</text>
+      <text id="bps-data" class="sensor-data">{ ... }</text>
+      <text id="gyro-label" class="sensor-label">gyroscope</text>
+      <text id="gyro-data" class="sensor-data">{ ... }</text>
+      <text id="hrm-label" class="sensor-label">heart rate</text>
+      <text id="hrm-data" class="sensor-data">{ ... }</text>
+      <text id="orientation-label" class="sensor-label">orientation</text>
+      <text id="orientation-data" class="sensor-data">{ ... }</text>
+      <text id="incoming-label" class="sensor-label">websocket data</text>
+      <text id="incoming-data" class="sensor-data">{ ... }</text>
+    </use>
+    <use id="item2" href="#panoramaview-item">
+      <rect width="100%" height="100%" fill="green" />
+    </use>
+    <use id="item3" href="#panoramaview-item">
+      <rect width="100%" height="100%" fill="blue" />
+    </use>
+    <use id="item4" href="#panoramaview-item">
+      <rect width="100%" height="100%" fill="gray" />
+    </use>
+
+    <!-- Have enough pagination dots for your slides (extras are hidden) -->
+    <use id="pagination-dots" href="#pagination-widget" y="8">
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-highlight-dot" />
+    </use>
+  </use>
+</svg>

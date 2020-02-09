@@ -1,0 +1,29 @@
+{
+  "fitbit": {
+    "appUUID": "b57f1b78-1285-4c78-bfd5-4ebdfb1cd5c5",
+    "appType": "app",
+    "appDisplayName": "sensor-demo",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity",
+      "access_internet",
+      "run_background",
+      "access_location",
+      "access_user_profile"
+    ],
+    "buildTargets": [
+      "mira"
+    ],
+    "i18n": {
+      "en": {
+        "name": "sensor-demo"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0"
+  }
+}
