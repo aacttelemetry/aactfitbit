@@ -14,17 +14,36 @@
       <text id="hrm-data" class="sensor-data">{ ... }</text>
       <text id="orientation-label" class="sensor-label">orientation</text>
       <text id="orientation-data" class="sensor-data">{ ... }</text>
-      <text id="incoming-label" class="sensor-label">websocket data</text>
+      <text id="incoming-label" class="sensor-label">websocket data:standard</text>
+      <text id="incoming-data" class="sensor-data">{ ... }</text>
+      <text id="incoming-label" class="sensor-label">websocket data:debug</text>
       <text id="incoming-data" class="sensor-data">{ ... }</text>
     </use>
     <use id="item2" href="#panoramaview-item">
       <rect width="100%" height="100%" fill="green" />
+      <text id="accel-label" class="sensor-label" x="50" y="50">accelerometer</text>
     </use>
     <use id="item3" href="#panoramaview-item">
       <rect width="100%" height="100%" fill="blue" />
+      <use id="mybutton" href="#push-button" y="50" height="60"
+        fill="fb-red" font-family="System-Regular" font-size="40">
+        <set href="#text" attributeName="text-buffer" to="Click Me!" />
+        <set href="#text" attributeName="fill" to="fb-peach" />
+        <set href="#text" attributeName="y" to="12" />
+      </use>
     </use>
     <use id="item4" href="#panoramaview-item">
-      <rect width="100%" height="100%" fill="gray" />
+      <rect width="100%" height="100%" fill="black" />
+      <text id="accel-label" class="sensor-label" y="25">Communication</text>
+      <text id="accel-label" class="sensor-label" y="50">Raspberry Pi</text>
+      <text id="accel-label" class="sensor-data">192.168.1.78</text>
+      <text id="accel-label" class="sensor-label">Companion</text>
+      <text id="accel-label" class="sensor-data">192.168.1.58</text>
+      <text id="accel-label" class="sensor-label">Target Client</text>
+      <text id="accel-label" class="sensor-data">192.168.1.81</text>
+      <use id="mybutton2" href="#square-button" y="220" fill="fb-red">
+        <set href="#text" attributeName="text-buffer" to="Reconnect All" />
+      </use>
     </use>
 
     <!-- Have enough pagination dots for your slides (extras are hidden) -->

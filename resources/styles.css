@@ -11,8 +11,8 @@
 .sensor-data {
   font-family: System-Light;
   fill: yellow;
-  text-anchor: middle;
-  text-length: 64;
+  text-anchor: start;
+  text-length: 640; /*Sets the number of characters reserved for this element. Fixes the "New element text larger than buffer" error.*/
   font-size: 20;
   x: 50%;
   y: $;
